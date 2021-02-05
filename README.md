@@ -4,6 +4,10 @@
 
 A personal project to monitor work hours via a simple LED graph (inspired by [Awair Element](https://www.getawair.com/home/element)).
 
+### Disclaimer
+
+This should serve *only as an example* as it will be unmaintained and is only meant to serve my unique application only.
+
 ![Work Quality Monitor](docs/images/photo.jpg?raw=true "Work Quality Monitor")
 
 ## MicroPython Examples
