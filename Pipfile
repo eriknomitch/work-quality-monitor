@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 rshell = "*"
 adafruit-ampy = "*"
+autoscraper = "*"
 
 [dev-packages]
 pylint = "*"
