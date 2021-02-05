@@ -2,7 +2,7 @@
 
 ## Overview
 
-A personal project to monitor my work hours simple, physical LED graphs (inspired by [Awair Element](https://www.getawair.com/home/element)).
+A personal project to monitor work hours via a simple LED graph (inspired by [Awair Element](https://www.getawair.com/home/element)).
 
 ![Work Quality Monitor](docs/images/photo.jpg?raw=true "Work Quality Monitor")
 
