@@ -4,4 +4,8 @@
 # AMPY_PORT=/dev/tty.usbserial-000
 
 # pipenv run ampy --port /dev/tty.usbserial-0001 $@
+
+cd work-quality-monitor
+pwd
+
 pipenv run ampy $@
