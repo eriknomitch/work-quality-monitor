@@ -1,7 +1,8 @@
-# work-quality-monitor
+# Work Quality Monitor
 
 ## Overview
 
+A personal project to monitor my work hours simple, physical LED graphs (inspired by [Awair Element](https://www.getawair.com/home/element).
 
 ## MicroPython Examples
 
