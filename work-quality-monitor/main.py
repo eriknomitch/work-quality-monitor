@@ -81,11 +81,11 @@ def demo(np):
 # ------------------------------------------------
 np = neopixel.NeoPixel(machine.Pin(LED_DATA_PIN), LED_COUNT)
 
-leds_set_all((255, 255, 0))
+leds_set_all((50, 50, 0))
 
 connect_wifi()
 
-leds_set_all((0, 255, 0))
+leds_set_all((0, 100, 0))
 
 time.sleep(2)
 
