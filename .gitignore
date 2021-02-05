@@ -1,6 +1,3 @@
-.ampy
-work-quality-monitor/config.py
-
 # Created by https://www.toptal.com/developers/gitignore/api/macos,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,python
 
@@ -173,3 +170,7 @@ dmypy.json
 .prof
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,python
+
+.ampy
+work-quality-monitor/config.py
+cookies.json
