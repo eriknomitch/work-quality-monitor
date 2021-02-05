@@ -2,6 +2,8 @@
 
 # NOTE: See (or create) .ampy
 
+source .ampy
+
 cd work-quality-monitor
 
 # ------------------------------------------------
@@ -18,12 +20,26 @@ function _put_all_files() {
   echo "Done."
 }
 
+function _start_repl() {
+  python -m serial.tools.miniterm --raw $AMPY_PORT $AMPY_BAUD
+}
+
 # ------------------------------------------------
 # ------------------------------------------------
 # ------------------------------------------------
-if [[ $# -gt 0 ]] ; then
-  pipenv run ampy $@
+if [[ $# == 0 ]] ; then
+  _put_all_files
+  _start_repl
   exit
 fi
 
-_put_all_files
+case $1 in
+  repl)
+    _start_repl
+    ;;
+  *)
+    pipenv run ampy $@
+    ;;
+esac
+
+
