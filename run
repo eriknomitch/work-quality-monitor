@@ -1,11 +1,29 @@
 #!/bin/zsh
 
-#rshell --port "/dev/tty.usbserial-0001" --baud 115200
-# AMPY_PORT=/dev/tty.usbserial-000
-
-# pipenv run ampy --port /dev/tty.usbserial-0001 $@
+# NOTE: See (or create) .ampy
 
 cd work-quality-monitor
-pwd
 
-pipenv run ampy $@
+# ------------------------------------------------
+# ------------------------------------------------
+# ------------------------------------------------
+function _put_all_files() {
+  for file in *.py; do
+    echo "Putting $file..."
+    pipenv run ampy put $file
+  done
+
+  echo "Resetting..."
+  pipenv run ampy reset
+  echo "Done."
+}
+
+# ------------------------------------------------
+# ------------------------------------------------
+# ------------------------------------------------
+if [[ $# -gt 0 ]] ; then
+  pipenv run ampy $@
+  exit
+fi
+
+_put_all_files
